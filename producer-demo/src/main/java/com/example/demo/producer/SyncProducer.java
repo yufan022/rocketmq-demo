@@ -29,7 +29,6 @@ public class SyncProducer {
             SendResult sendResult = producer.send(msg);
             System.out.printf("%s%n", sendResult);
         }
-        Thread.sleep(3000);
         //Shut down once the demo instance is not longer in use.
         producer.shutdown();
     }
